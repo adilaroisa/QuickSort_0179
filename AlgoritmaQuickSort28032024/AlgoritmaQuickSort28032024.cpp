@@ -58,6 +58,8 @@ void q_sort(int low, int high)
 			i++; // step 6
 			cmp_count++;
 		}
+		cmp_count++;
+		if (i < j); // step 9
 	}
 }
 
