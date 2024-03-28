@@ -59,7 +59,18 @@ void q_sort(int low, int high)
 			cmp_count++;
 		}
 		cmp_count++;
-		if (i < j); // step 9
+		// search for an  element less than or equal to pivot
+		while ((arr[j] > pivot) && (j >= low)) //step 7
+		{
+			j--; // step 8
+			cmp_count++;
+		}
+		cmp_count++;
+		if (i < j) // step 9
+		{
+			// swap the element at index i with the element at index j
+			swap(i, j);
+		}
 	}
 }
 
